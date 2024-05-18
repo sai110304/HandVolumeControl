@@ -72,8 +72,10 @@ def find_handlandmark_position(img, outputs, hand_no=0):
 
 pt,ct=0,0  #previous time,current time
 
-url = 'http://192.0.0.4:8080/video'  #url of the ip webcam app
-cap = cv2.VideoCapture(url)
+#url = 'http://192.0.0.4:8080/video'  #url of the ip webcam app
+#cap = cv2.VideoCapture(url)
+
+cap = cv2.VideoCapture(0)
 
 cap.set(3, camera_width)
 cap.set(4, camera_height)
